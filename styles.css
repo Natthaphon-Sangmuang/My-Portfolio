@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: rgb(250, 247, 240);
+    color: rgb(74, 73, 71);
+}
+
+header {
+    background-color: rgb(177, 116, 87);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+header nav ul a:hover {
+    color: rgb(216, 210, 194);
+}
+
+.container {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+    line-height: 1.5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(177, 116, 87);
+}
+
+/* Project section styling */
+.project-big {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.project-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: rgb(74, 73, 71);
+}
+
+.project-content p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.project-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.project-image {
+    object-fit: cover;
+    flex: 1;
+    text-align: center;
+}
+
+.project-image img {
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rat43 {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.rat169 {
+    width: 100%;
+    aspect-ratio: 16/9.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgb(177, 116, 87);
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    text-shadow: -1px 0px 0 rgba(0, 0, 0, 0.4), 1px 0px 0 rgba(0, 0, 0, 0.4),
+        -1px 0px 0 rgba(0, 0, 0, 0.4), 1px 0px 0 rgba(0, 0, 0, 0.4);
+}
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    background-color: rgb(216, 210, 194);
+    color: black;
+    border-radius: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dot1,
+.dot2,
+.dot3,
+.dot4,
+.dot5,
+.dot6,
+.dot7,
+.dot8,
+.dot9,
+.dot10 {
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px 0px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: rgb(177, 116, 87);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.flex-about {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+
+.profile-image {
+    width: 400px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 80px; /* Increase space between image and text */
+}
+
+.about-description {
+    flex: 1; /* Allow the description to take remaining space */
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Distribute space between items */
+    margin: 20px 0;
+}
+
+.bubble-container {
+    flex: 1; /* Each bubble-container takes equal space */
+    margin-right: 50px; /* Add some spacing between containers */
+}
+
+.bubble-container:last-child {
+    margin-right: 0; /* Remove margin from the last container */
+}
+
+.bubble-label {
+    background-color: rgb(177, 116, 87);
+    color: white;
+    border-radius: 15px 0 0 15px;
+    padding: 20px;
+    text-align: center;
+    width: 150px; /* Adjust width as needed */
+    font-size: 1.2rem;
+}
+
+.bubble {
+    background-color: rgb(216, 210, 194);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    line-height: 1.5;
+    flex: 1; /* Takes the remaining space */
+}
+
+.bubble h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: rgb(74, 73, 71);
+}
+
+.bubble p {
+    font-size: 1rem;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.bubble ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.info {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically centered */
+    margin-bottom: 0px; /* Space between this and the next paragraph */
+}
+
+.date {
+    font-size: 1rem; /* Adjust font size to match */
+    color: rgb(74, 73, 71); /* Same color as the university name */
+    margin-left: 10px; /* Add space between the university name and date */
+}
+
+/* Two-column layout for the skills section */
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+    margin-top: 20px; /* Space above the grid */
+}
+
+.skill-item {
+    background-color: rgb(
+        177,
+        116,
+        87,
+        0.3
+    ); /* Background for each skill item */
+    padding: 20px; /* Padding inside easch item */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: left; /* Left-aligned text */
+}
+
+.skill-item h4 {
+    margin-bottom: 10px; /* Space below the heading */
+    font-size: 1.2rem; /* Adjust heading size */
+    color: rgb(74, 73, 71);
+}
+
+.skill-item ul {
+    padding-left: 20px; /* Indent list */
+}
+
+.skill-item p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+}
+
+strong {
+    color: rgb(177, 116, 87);
+}
+
+.project-link {
+    display: inline-block;
+    background-color: rgb(177, 116, 87); /* Your chosen color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.6rem; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.project-link:hover {
+    background-color: rgb(216, 210, 194); /* Change color on hover */
+}
+
+.contact a {
+    color: rgb(177, 116, 87);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgba(177, 116, 87, 0.5);
+}
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}
