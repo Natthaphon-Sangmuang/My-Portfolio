@@ -350,7 +350,7 @@ strong {
     padding: 10px 20px; /* Padding around the text */
     border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
-    font-size: 1.6rem; /* Font size */
+    font-size: 1.4rem; /* Font size */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
 
